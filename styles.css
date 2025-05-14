@@ -1,0 +1,659 @@
+@font-face {
+  font-family: "uber-eats-bold";
+  src: url("/font/14f73a3f74611002.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "uber-eats-normal";
+  src: url("/font/276edd4275dda838.woff2") format("woff2");
+}
+@font-face {
+  font-family: "uber-eats-semibold";
+  src: url("/font/eee1724e2e5a8ebd.woff2") format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #ffffff;
+  color: #0000;
+  font-family: "uber-eats-bold";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 100%;
+}
+
+header .header-main-container {
+  z-index: 1;
+  display: flex;
+  height: 48px;
+  justify-content: flex-start;
+  padding: 0px 16px;
+  background: transparent;
+  align-items: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  flex-direction: row;
+  position: absolute;
+}
+
+header .mobile-btn-container {
+  margin-right: 10px;
+  margin-left: -6px;
+}
+
+header .mobile-btn-container button {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  padding: 0px;
+  border-radius: 50%;
+  margin: 0;
+  border: none;
+  align-content: center;
+  margin-top: 2px;
+}
+
+header .title-container a {
+  text-decoration: none;
+}
+
+header .title-container a img {
+  display: block;
+  height: 16px;
+  width: auto;
+}
+
+header .login-btn-icon {
+  margin-right: 12px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
+  background: #ffffff;
+  min-width: 36px;
+  border-radius: 500px;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+header .login-btn-icon svg {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+}
+
+header .sign-up-btn {
+  align-items: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #000;
+  border-radius: 500px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 14px;
+  padding: 8px 12px;
+  height: 36px;
+  font-family: "uber-eats-semibold";
+  line-height: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+header .header-right-btn {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+main .center-container {
+  justify-items: center;
+  /* height: 100vh; */
+  height: 1275px;
+  background-color: rgb(226, 162, 87);
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+main .center-container img {
+  object-fit: cover;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+}
+
+main .center-content-container {
+  top: 104px;
+  padding: 0px 16px;
+  color: #000;
+  position: absolute;
+}
+
+main .center-content-container h2 {
+  margin-bottom: 24px;
+  line-height: 44px;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "uber-eats-bold";
+  color: rgb(0, 0, 0);
+}
+
+main .input-main-container {
+  box-shadow: unset;
+  background-color: unset;
+  padding: 8px 0px;
+  display: block;
+}
+
+main .input-sub-container {
+  position: sticky;
+  padding-left: 4px;
+  box-shadow: inset 0px -1px 0px #f3f3f3;
+  height: 56px;
+  align-items: center;
+  background-color: #ffffff;
+  top: 0;
+  display: flex;
+}
+
+main .input-sub-container svg {
+  margin: 12px;
+  height: 24px;
+  width: 24px;
+  fill: rgb(0, 0, 0);
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+main .input-sub-container .input-text {
+  color: #4b4b4b;
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "uber-eats-normal";
+}
+
+main .delivery-time-container {
+  margin-bottom: 16px;
+  box-shadow: inset 0px -1px 0px #f3f3f3;
+  background: #ffffff;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
+}
+
+main .delivery-time-container .delivery-sub-container {
+  height: 56px;
+  background: #ffffff;
+  width: 100%;
+  align-items: center;
+  color: #000000;
+  display: flex;
+}
+
+main .timer-icon-container {
+  flex-shrink: 0;
+  display: flex;
+}
+
+main .timer-icon-sub {
+  width: 48px;
+  justify-content: center;
+  height: 48px;
+  align-items: center;
+  display: flex;
+  margin-left: 4px;
+}
+
+main .timer-icon {
+  line-height: 1;
+  height: 24px;
+  width: 24px;
+}
+
+main .text-down-container {
+  flex-grow: 1;
+  justify-content: flex-start;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+main .text-down-container .text {
+  line-height: 20px;
+  flex-grow: 1;
+  font-weight: 500;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: "uber-eats-semibold";
+}
+
+main .text-down-container .down-arrow-container {
+  width: 48px;
+  justify-content: center;
+  height: 48px;
+  align-items: center;
+  display: flex;
+  margin-left: 4px;
+}
+
+main .text-down-container .down-arrow-container-2 {
+  line-height: 1;
+  height: 24px;
+  width: 24px;
+  color: #000000;
+}
+
+main .search-btn-container {
+  border-radius: 8px;
+  padding: 12px 16px;
+  min-height: 56px;
+  font-size: 18px;
+  background-color: #000;
+  color: #ffffff;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "uber-eats-semibold";
+  width: 100%;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
+}
+
+main .sign-in-section {
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 24px;
+  font-family: "uber-eats-semibold";
+  color: #000;
+}
+
+main .sign-in-section a {
+  text-decoration: underline;
+  color: black;
+}
+
+.second-container {
+  padding: 16px 0 0 0;
+  margin-top: 32px;
+}
+
+.second-container .uber-eats-container {
+  margin: 0 16px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.second-container .uber-eats-container .uber-eats-container-2 {
+  background-color: #ffffff;
+  flex-direction: column;
+  display: flex;
+}
+
+.second-container .uber-eats-container .icon-text-container {
+  margin-bottom: 16px;
+  align-items: center;
+  display: flex;
+}
+
+.second-container .uber-eats-container img {
+  border-radius: 15%;
+  height: 64px;
+  width: 64px;
+  flex-shrink: 0;
+}
+
+.second-container .uber-eats-container p {
+  line-height: 28px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "uber-eats-bold";
+  color: rgb(0, 0, 0);
+  margin-left: 16px;
+}
+
+.second-container .get-app-btn button {
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 12px 16px;
+  min-height: 56px;
+  font-size: 18px;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "uber-eats-";
+  width: 100%;
+  align-items: center;
+  color: #000000;
+  display: flex;
+  box-sizing: border-box;
+  border: none;
+}
+
+.second-container .get-app-btn button .icon-text-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.second-container .get-app-btn button svg {
+  height: 18px;
+  width: 18px;
+  flex: none;
+  fill: currentColor;
+}
+
+.second-container .get-app-btn button span {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "uber-eats-semibold";
+  color: #000000;
+}
+
+.second-container .three-img-container {
+  margin: 0 16px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  color: #000000;
+}
+
+.second-container .three-img-container a:first-child {
+  margin-top: 48px;
+}
+.second-container .three-img-container a {
+  margin-top: 36px;
+}
+
+.second-container .three-img-container img {
+  height: auto;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.second-container .three-img-container .text-1 {
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "uber-eats-bold";
+}
+
+.second-container .three-img-container .text-2 {
+  margin-top: 8px;
+  text-decoration: underline;
+  line-height: 20px;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "uber-eats-semibold";
+}
+
+.map-section-container {
+  margin: 0 16px;
+  margin-top: 48px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.map-section-container h2,
+.available-countries h2 {
+  line-height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  font-family: "uber-eats-bold";
+}
+
+.map-section-container .map-container {
+  margin: 16px 0px;
+}
+
+.map-section-container .map-container .map-container-2 {
+  height: 360px;
+}
+
+.map-section-container .map-container-3 {
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.map-section-container .map-container-4 {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  touch-action: none;
+  outline: none;
+}
+
+.map-section-container .map-container-4 img {
+  height: 360px;
+  width: 343px;
+}
+
+.map-section-container .text-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 16px 8px;
+  grid-auto-flow: column;
+  display: grid;
+}
+
+.map-section-container .text-container .text span,
+.available-countries .text-container .text span {
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "uber-eats-normal";
+  color: #000;
+}
+
+.map-section-container .view-all-text,
+.available-countries .view-all-text {
+  text-decoration: underline;
+  margin-top: 24px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  font-family: "uber-eats-semibold";
+}
+
+.available-countries {
+  margin-top: 48px;
+  margin-inline: 16px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.available-countries .text-container {
+  grid-template-rows: repeat(15, 1fr);
+  gap: 24px 8px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  display: grid;
+  margin-top: 24px;
+}
+
+footer {
+  border-top: 1px solid #f3f3f3;
+  margin-top: 64px;
+  padding: 64px 16px 80px;
+  background-color: #ffffff;
+}
+
+footer .title-icon {
+  margin-bottom: 48px;
+  height: 24px;
+  width: auto;
+  filter: unset;
+}
+
+footer .store-container {
+  margin-bottom: 64px;
+}
+
+footer .store-container-2 {
+  gap: 16px;
+  flex-flow: row wrap;
+  display: flex;
+}
+
+footer .store-container-2 a img {
+  width: auto;
+}
+
+footer .more-content {
+  margin-bottom: 64px;
+  flex-direction: column;
+  display: flex;
+}
+
+footer .more-content a {
+  margin-bottom: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "uber-eats-normal";
+  color: #000000;
+  display: flex;
+}
+
+footer .more-content a svg {
+  fill: currentColor;
+  flex: none;
+  align-self: center;
+  width: 16px;
+  height: 16px;
+}
+
+footer .more-content a span {
+  margin-left: 8px;
+}
+
+footer .hr {
+  background-color: #f3f3f3;
+  margin: 40px 0;
+  border: none;
+  height: 1px;
+}
+
+footer .social-media-container {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 24px;
+  color: #000000;
+  flex-direction: row;
+  position: relative;
+}
+
+footer .social-media-container a svg {
+  fill: currentColor;
+  flex: none;
+  width: 16px;
+  height: 16px;
+}
+
+footer .more-content .text {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "uber-eats-normal";
+  color: #000000;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+footer .more-content .last-text {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "uber-eats-normal";
+  color: #000000;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+footer .more-content .copyright-text {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "uber-eats-normal";
+  color: #000000;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+/* mobile screen max-width */
+
+@media screen and (max-width:767px){
+    .tablet-img, .lap-screen {
+    display: none;
+}
+}
+           
+/* tablet screen  */
+
+@media screen and (min-width:768px){
+    .mob-img{
+        display: none;
+    }
+
+    .map-section-container .map-container-4 img {
+        width: 100%;
+    }
+}
+
+
+
+/* small laptop screen */
+
+@media screen and (min-width:1024px) {
+    main .input-main-container{
+        padding: 0;
+    }
+    .tablet-img{
+        display: none;
+    }
+}
